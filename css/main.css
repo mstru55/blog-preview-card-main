@@ -1,0 +1,89 @@
+html {
+	font-size: 62.5%;
+}
+body {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+	background-color: hsl(47, 88%, 63%);
+	font-family: 'Figtree', sans-serif;
+}
+
+.card {
+	padding: 2em;
+	background-color: hsl(0, 0%, 100%);
+	width: 70%;
+	border-radius: 20px;
+	box-shadow: 10px 5px 5px 5px #000;
+}
+
+.card-img img {
+	width: 100%;
+	border-radius: 10px;
+}
+.card-category {
+	padding: 2em 0;
+}
+.card-category-btn {
+	padding: 0.3em 0.6em;
+	font-size: 1.4rem;
+	text-transform: capitalize;
+	font-weight: bold;
+	text-decoration: none;
+	background-color: hsl(47, 88%, 63%);
+	color: hsl(0, 0%, 7%);
+}
+.card-publish {
+	padding: 1em 0;
+	font-size: 1rem;
+}
+.card-text {
+	padding: 1em 0;
+}
+.card-text h1 {
+	padding: 1em 0;
+	font-size: 2rem;
+	font-weight: bold;
+}
+.card-text p {
+	font-size: 1.3rem;
+	color: hsl(0, 0%, 42%);
+}
+.card-personal {
+	padding: 1em 0;
+	display: flex;
+	align-items: center;
+}
+.card-personal img {
+	width: 30px;
+}
+.card-personal p {
+	margin-left: 1em;
+	text-transform: capitalize;
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+	.card {
+		width: 30%;
+	}
+}
+@media (min-width: 1440px) {
+	.card {
+		width: 22%;
+	}
+	.card-publish {
+		font-size: 1.2rem;
+	}
+	.card-text h1:hover {
+		color: hsl(47, 88%, 63%);
+	}
+	.card-text p {
+		padding-bottom: 1em;
+		font-size: 1.6rem;
+	}
+}
